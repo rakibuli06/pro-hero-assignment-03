@@ -1,13 +1,502 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockeys</title>
+    <title>Hockey's</title>
+
+    <!-- Tailwind and Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- style css -->
+    <style>
+        * {
+            font-family: 'Manrope', sans-serif;
+        }
+        .sec-color {
+            color: rgba(19, 19, 24, 0.60);
+        }
+        .red-color {
+            color: red;
+        }
+    </style>
 </head>
+
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+    <!-- start -->
+    <div class="m-auto w-full place-content-center  lg:w-[1170px]">
+        <header>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <h1 class="font-extrabold">Hockey's</h1>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <img class="w-10 h-10" src="Images/search-bar-icon-png-16.png" alt="">
+                    <a class="btn bg-red-600 text-white">Get Ticket</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Section-3 Professional Hockeys Club -->
+        <section class="pt-20">
+            <div class="text-center pb-10">
+                <h1 class="font-extrabold text-4xl pb-5">Professional Hockeys Club</h1>
+                <p class="text-base font-medium" style="color: rgba(19, 19, 24, 0.60); ">Our club is fully beginer
+                    friendly. We have well trained <br>hockey trianer for all types of learners.</p>
+            </div>
+            <hr>
+            <div class="flex p-10 flex-col lg:flex-row text-center pl-20 gap-20 place-content-center">
+                <div>
+                    <div class="radial-progress" style="--value:87; color: #FF4240; width: 120px; height: 120px;"
+                        role="progressbar"><span style="color: black;">87%</span></div>
+                    <div>
+                        <h1 class="font-semibold text-xl">Prayer</h1>
+                        <p class="font-normal text-base sec-color">We provide prayer <br>facility</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="radial-progress" style="--value:95; color: #0cff5d; width: 120px; height: 120px;"
+                        role="progressbar"><span style="color: black;">95%</span></div>
+                    <div>
+                        <h1 class="font-semibold text-xl">Experienced Coach</h1>
+                        <p class="font-normal text-base sec-color">We have experienced <br> coach</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="radial-progress" style="--value:90; color: #f3a30f; width: 120px; height: 120px;"
+                        role="progressbar"><span style="color: black;">90%</span></div>
+                    <div>
+                        <h1 class="font-semibold text-xl">Senior Player</h1>
+                        <p class="font-normal text-base sec-color">Get trained from <br>seniors</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="radial-progress" style="--value:80; color: #0676f7; width: 120px; height: 120px;"
+                        role="progressbar"><span style="color: black;">80%</span></div>
+                    <div>
+                        <h1 class="font-semibold text-xl">Training Ground</h1>
+                        <p class="font-normal text-base sec-color">Get trained in our <br>training ground</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Section-4 Program Sections -->
+        <section class="pt-20 text-center">
+            <div>
+                <h1 class="font-extrabold text-4xl pb-5">Program Sections</h1>
+                <p class="text-base font-medium" style="color: rgba(19, 19, 24, 0.60); ">Program selection is not hastle
+                    anymore here. <br>We have enought facility to select.</p>
+            </div>
+            <div class="flex flex-col text-center w-full lg:flex-row pt-8 gap-4">
+                <div><img src="Images/2.png" alt=""></div>
+                <div><img src="Images/3.png" alt=""></div>
+            </div>
+            <div class="pt-4 w-fit lg:w-full">
+                <div><img src="Images/4.png" alt=""></div>
+            </div>
+        </section>
+        <!-- Section-5 Our New Products -->
+        <section class="pt-20 text-center">
+            <div>
+                <h1 class="font-extrabold text-4xl pb-5">Our New Products</h1>
+                <p class="text-base font-medium" style="color: rgba(19, 19, 24, 0.60); ">Our new products are really eco
+                    friendly and durable. <br>Amazing thing is that it is fine.</p>
+            </div>
+            <div>
+                <!-- 1st row -->
+                <div class="flex gap-4 flex-col lg:flex-row p-3">
+                    <!-- 1st pic -->
+                    <div class="card card-side bg-base-100 shadow-xl">
+                        <figure><img src="Images/5.png" alt="" /></figure>
+                        <div class="card-body text-left">
+                            <div class="flex gap-2">
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/star.png" alt=""></div>
+                                    <div> 4.9</div>
+                                </div>
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/view.png" alt=""></div>
+                                    <div> 79</div>
+                                </div>
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/love.png" alt=""></div>
+                                    <div> 36</div>
+                                </div>
+                            </div>
+                            <h2 class="card-title">Jacket for men</h2>
+                            <p>Click here to see more</p>
+                            <div class="flex">
+                                <div class="font-extrabold text-lg red-color">Price- $19.00</div>
+                                <div class="flex">
+                                    <div><img style="width: 20px; height: 20px;" src="Images/shopping.png" alt=""></div>
+                                    <div class="font-medium text-base sec-color">Delivery Fee: Free</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd pic -->
+                    <div class="card card-side bg-base-100 shadow-xl">
+                        <figure><img src="Images/6.png" alt="" /></figure>
+                        <div class="card-body text-left">
+                            <div class="flex gap-2">
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/star.png" alt=""></div>
+                                    <div> 4.9</div>
+                                </div>
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/view.png" alt=""></div>
+                                    <div> 79</div>
+                                </div>
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/love.png" alt=""></div>
+                                    <div> 36</div>
+                                </div>
+                            </div>
+                            <h2 class="card-title">Jacket for women</h2>
+                            <p>Click here to see more</p>
+                            <div class="flex">
+                                <div class="font-extrabold text-lg red-color">Price- $22.00</div>
+                                <div class="flex">
+                                    <div><img style="width: 20px; height: 20px;" src="Images/shopping.png" alt=""></div>
+                                    <div class="font-medium text-base sec-color">Delivery Fee: Free</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd row -->
+                <div class="flex gap-4 flex-col lg:flex-row p-3">
+                    <!-- 1st pic -->
+                    <div class="card card-side bg-base-100 shadow-xl">
+                        <figure><img src="Images/7.png" alt="" /></figure>
+                        <div class="card-body text-left">
+                            <div class="flex gap-2">
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/star.png" alt=""></div>
+                                    <div> 4.9</div>
+                                </div>
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/view.png" alt=""></div>
+                                    <div> 79</div>
+                                </div>
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/love.png" alt=""></div>
+                                    <div> 36</div>
+                                </div>
+                            </div>
+                            <h2 class="card-title">Cap</h2>
+                            <p>Click here to see more</p>
+                            <div class="flex">
+                                <div class="font-extrabold text-lg red-color">Price- $9.50</div>
+                                <div class="flex">
+                                    <div><img style="width: 20px; height: 20px;" src="Images/shopping.png" alt=""></div>
+                                    <div class="font-medium text-base sec-color">Delivery Fee: Free</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd pic -->
+                    <div class="card card-side bg-base-100 shadow-xl">
+                        <figure><img src="Images/8.png" alt="" /></figure>
+                        <div class="card-body text-left">
+                            <div class="flex gap-2">
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/star.png" alt=""></div>
+                                    <div> 4.9</div>
+                                </div>
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/view.png" alt=""></div>
+                                    <div> 79</div>
+                                </div>
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/love.png" alt=""></div>
+                                    <div> 36</div>
+                                </div>
+                            </div>
+                            <h2 class="card-title">Jersy</h2>
+                            <p>Click here to see more</p>
+                            <div class="flex">
+                                <div class="font-extrabold text-lg red-color">Price- $17.00</div>
+                                <div class="flex">
+                                    <div><img style="width: 20px; height: 20px;" src="Images/shopping.png" alt=""></div>
+                                    <div class="font-medium text-base sec-color">Delivery Fee: Free</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd row -->
+                <div class="flex gap-4 flex-col lg:flex-row p-3">
+                    <!-- 1st pic -->
+                    <div class="card card-side bg-base-100 shadow-xl">
+                        <figure><img src="Images/9.png" alt="" /></figure>
+                        <div class="card-body text-left">
+                            <div class="flex gap-2">
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/star.png" alt=""></div>
+                                    <div> 4.9</div>
+                                </div>
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/view.png" alt=""></div>
+                                    <div> 79</div>
+                                </div>
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/love.png" alt=""></div>
+                                    <div> 36</div>
+                                </div>
+                            </div>
+                            <h2 class="card-title">Helmet</h2>
+                            <p>Click here to see more</p>
+                            <div class="flex">
+                                <div class="font-extrabold text-lg red-color">Price- $48.59</div>
+                                <div class="flex">
+                                    <div><img style="width: 20px; height: 20px;" src="Images/shopping.png" alt=""></div>
+                                    <div class="font-medium text-base sec-color">Delivery Fee: Free</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd pic -->
+                    <div class="card card-side bg-base-100 shadow-xl">
+                        <figure><img src="Images/10.png" alt="" /></figure>
+                        <div class="card-body text-left">
+                            <div class="flex gap-2">
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/star.png" alt=""></div>
+                                    <div> 4.9</div>
+                                </div>
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/view.png" alt=""></div>
+                                    <div> 79</div>
+                                </div>
+                                <div class="flex">
+                                    <div><img style="width:24px; height: 24px" src="Images/love.png" alt=""></div>
+                                    <div> 36</div>
+                                </div>
+                            </div>
+                            <h2 class="card-title">Football</h2>
+                            <p>Click here to see more</p>
+                            <div class="flex">
+                                <div class="font-extrabold text-lg red-color">Price- $11.60</div>
+                                <div class="flex">
+                                    <div><img style="width: 20px; height: 20px;" src="Images/shopping.png" alt=""></div>
+                                    <div class="font-medium text-base sec-color">Delivery Fee: Free</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section-6 client's question -->
+        <section class="pt-28 ">
+            <div class="text-center">
+                <h1 class="font-extrabold text-4xl pb-5"> Clients Question</h1>
+                <p class="text-base font-medium" style="color: rgba(19, 19, 24, 0.60); ">What clients ask about us?</p>
+            </div>
+            <div>
+                <div class="hero min-h-screen">
+                    <div class="hero-content flex-col lg:flex-row gap-10">
+                        <img src="Images/11.png" class="max-w-sm rounded-lg shadow-2xl w-1/2 lg:w-full" />
+                        <!-- According -->
+                        <div class="pb-20">
+                            <div class="collapse collapse-plus bg-base-200 pb-15">
+                                <input type="radio" name="my-accordion-3" checked="checked" />
+                                <div class="collapse-title text-xl font-medium">
+                                    Who we are?
+                                </div>
+                                <div class="collapse-content">
+                                    <p>We are the first club in the whole country of Hockey.</p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-plus bg-base-200 pb-15">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-medium">
+                                    Our Equipment
+                                </div>
+                                <div class="collapse-content">
+                                    <p>We provide all kinds of equipments</p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-plus bg-base-200">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-medium">
+                                    Why we are the best out of best?
+                                </div>
+                                <div class="collapse-content">
+                                    <p>We provide all types of facilities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!--Sec-7 Get In Touch -->
+        <section>
+            <div class="text-center">
+                <h1 class="font-extrabold text-4xl pb-5">Get In Touch</h1>
+                <p class="text-base font-medium" style="color: rgba(19, 19, 24, 0.60); ">You can write to us about
+                    anything</p>
+            </div>
+            <div class="flex flex-col lg:flex-row">
+                <div class="pb-15 w-1/2 place-content-center lg:w-full">
+                    <div
+                        style="width: 374px; height: 216px; border-radius: 16px; background: rgba(188, 237, 109, 0.10);">
+                        <div><img src="Images/Group 1171275317.png" alt=""></div>
+                        <div style="color: rgba(19, 19, 24, 0.40); ">Phone Number</div>
+                        <div style="font-weight: bold;">01739622</div>
+                    </div>
+                    <div
+                        style="width: 374px; height: 216px; border-radius: 16px; background: rgba(241, 241, 238, 0.1);">
+                        <div><img src="Images/Group 1171275318.png" alt=""></div>
+                        <div style="color: rgba(19, 19, 24, 0.40); ">Email</div>
+                        <div style="font-weight: bold;">Shakil109@gamil.com</div>
+                    </div>
+                    <div
+                        style="width: 374px; height: 216px; border-radius: 16px; background: rgba(188, 237, 109, 0.10);">
+                        <div><img src="Images/Group 1171275321.png" alt=""></div>
+                        <div style="color: rgba(19, 19, 24, 0.40); ">Location</div>
+                        <div style="font-weight: bold;">Bangla Motor, Dhaka</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex p-10 gap-10">
+                        <div>
+                            <h1>Your Name</h1>
+                            <input type="text" placeholder="your name" class="input input-bordered w-full max-w-xs" />
+                        </div>
+                        <div>
+                            <h1>Your Email</h1>
+                            <input type="text" placeholder="your email" class="input input-bordered w-full max-w-xs" />
+                        </div>
+                    </div>
+                    <div class="flex p-10 gap-10">
+                        <div>
+                            <h1>Subject</h1>
+                            <input type="text" placeholder="your subject"
+                                class="input input-bordered w-full max-w-xs" />
+                        </div>
+                        <div>
+                            <h1>Phone Number</h1>
+                            <input type="text" placeholder="your number" class="input input-bordered w-full max-w-xs" />
+                        </div>
+                    </div>
+                    <div class="pl-10">
+                        <h1>Message</h1>
+                        <textarea class="textarea textarea-bordered" placeholder="Message"></textarea><br>
+                        <button class="bg-red-600 text-white font-bold" style="border-radius: 10px;">Send
+                            Message</button>
+                    </div>
+                </div>
+            </div>
+            <!-- SEction-8 -->
+            <section class="w-full lg:w-full">
+                <div class="text-center place-content-center">
+                    <h1 class="font-extrabold text-xl">Socical Media</h1>
+                    <div class="flex gap-4 place-content-center lg:place-content-center pt-3">
+                        <img style="width: 24px; height: 24px;" src="Images/fb.png" alt="">
+                        <img style="width: 24px; height: 24px;" src="Images/X.png" alt="">
+                        <img style="width: 24px; height: 24px;" src="Images/insta.png" alt="">
+                        <img style="width: 24px; height: 24px;" src="Images/github.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </div>
+
+    <footer class="pt-20  ">
+        <footer
+            class="footer p-10 bg-black text-base-content place-content-center justify-between flex flex-col w-full lg:flex-row w-full">
+            <nav>
+                <header class="footer-title font-extrabold text-3xl text-white">Get In Touch</header>
+                <a class="link link-hover font-medium text-white">We are always for you</a>
+                <div class="flex">
+                    <img style="width: 20px; height: 20px;" src="Images/Group 1171275317.png" alt="">
+                    <a class="link link-hover font-medium text-white">(+62) 123-321-543</a>
+                </div>
+                <div class="flex">
+                    <img style="width: 20px; height: 20px;" src="Images/Group 1171275318.png" alt="">
+                    <a class="link link-hover font-medium text-white">hockeyz@gmail.com</a>
+                </div>
+            </nav>
+
+            <div class="flex gap-10 lg:gap-20">
+                <nav>
+                    <header class="footer-title font-extrabold text-3xl text-white">Company</header>
+                    <a class="link link-hover font-medium text-white">About us</a><br>
+                    <a class="link link-hover font-medium text-white">Contact</a><br>
+                    <a class="link link-hover font-medium text-white">Jobs</a><br>
+                    <a class="link link-hover font-medium text-white">Press kit</a>
+                </nav>
+                <nav>
+                    <header class="footer-title font-extrabold text-3xl text-white">Legal</header>
+                    <a class="link link-hover font-medium text-white">Terms of use</a><br>
+                    <a class="link link-hover font-medium text-white">Privacy policy</a><br>
+                    <a class="link link-hover font-medium text-white">Cookie policy</a>
+                </nav>
+            </div>
+            <nav>
+                <header class="footer-title font-extrabold text-3xl text-white">Support</header>
+                <a class="link link-hover font-medium text-white">Visit our office</a>
+                <a class="link link-hover font-medium text-white">Invest our comany</a>
+                <a class="link link-hover font-medium text-white">Career track now</a>
+            </nav>
+        </footer>
+
+    </footer>
 </body>
+
 </html>

@@ -15,15 +15,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- font awesome cnd -->
+    <script src="https://kit.fontawesome.com/178d0f1765.js" crossorigin="anonymous"></script>
 
     <!-- style css -->
     <style>
         * {
             font-family: 'Manrope', sans-serif;
         }
+
         .sec-color {
             color: rgba(19, 19, 24, 0.60);
         }
+
         .red-color {
             color: red;
         }
@@ -35,15 +39,33 @@
     <!-- start -->
     <div class="m-auto w-full place-content-center  lg:w-[1170px]">
         <header>
-            <div class="navbar bg-base-100">
+            <div class="navbar my-9 bg-base-100">
                 <div class="navbar-start">
-                    <h1 class="font-extrabold">Hockey's</h1>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Page</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey<span
+                            class="text-red-500">’</span>s</h2>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
-                        <li><a>Pages</a></li>
+                        <li><a>Page</a></li>
                         <li><a>Blog</a></li>
                         <li><a>Contact</a></li>
                     </ul>
@@ -86,6 +108,7 @@
                 </div>
             </div>
         </main>
+
         <!-- Section-3 Professional Hockeys Club -->
         <section class="pt-20">
             <div class="text-center pb-10">
@@ -129,19 +152,59 @@
                 </div>
             </div>
         </section>
+        
         <!--Section-4 Program Sections -->
-        <section class="pt-20 text-center">
-            <div>
-                <h1 class="font-extrabold text-4xl pb-5">Program Sections</h1>
-                <p class="text-base font-medium" style="color: rgba(19, 19, 24, 0.60); ">Program selection is not hastle
-                    anymore here. <br>We have enought facility to select.</p>
+        <!-- program description -->
+        <section>
+            <div class="my-20 text-center">
+                <h2 class="text-4xl font-extrabold mb-6">Program Sections</h2>
+                <p class="w-9/12 mx-auto">players, who wear skates and compete on an ice rink. The object is to propel a
+                    vulcanized rubber disk, the puck, past a goal line and into a net guarded by a goaltender, or
+                    goalie.
+                </p>
             </div>
-            <div class="flex flex-col text-center w-full lg:flex-row pt-8 gap-4">
-                <div><img src="Images/2.png" alt=""></div>
-                <div><img src="Images/3.png" alt=""></div>
-            </div>
-            <div class="pt-4 w-fit lg:w-full">
-                <div><img src="Images/4.png" alt=""></div>
+
+            <!-- program card -->
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+                <!-- fast card program -->
+                <div class="card bg-base-100 image-full">
+                    <figure><img src="Images/2.png" alt="" /></figure>
+                    <div class="card-body mx-16">
+                        <h2 class="card-title text-3xl mb-4 mt-10 font-extrabold text-white">Junior Program!</h2>
+                        <p class="text-white">Held every two years, the Junior World Cup is a spectacle of new talent.
+                        </p>
+                        <div class="card-actions ">
+                            <button class="btn bg-red-600 border-none text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- second program card -->
+                <div class="card  bg-base-100 image-full">
+                    <figure><img src="Images/3.png" alt="" /></figure>
+                    <div class="card-body px-16">
+                        <h2 class="card-title text-3xl mb-4 mt-10 font-extrabold text-white">Teenager Program</h2>
+                        <p class="text-white">Held every two years, the Junior World Cup is a spectacle of new talent.
+                        </p>
+                        <div class="card-actions ">
+                            <button class="btn bg-red-600 border-none text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third card program -->
+                <div class="card mt-6 bg-base-100 mx-auto image-full">
+                    <figure><img src="Images/4.png" alt="" /></figure>
+                    <div class="card-body px-16 ">
+                        <h2 class="card-title text-3xl mb-4 mt-10 lg:mt-40 font-extrabold text-white">Professional
+                            Program
+                        </h2>
+                        <p class="text-white">Held every two years, the Junior World Cup is a spectacle of new talent.
+                        </p>
+                        <div class="card-actions ">
+                            <button class="btn bg-red-600 border-none text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Section-5 Our New Products -->
@@ -338,165 +401,197 @@
             </div>
         </section>
         <!-- Section-6 client's question -->
-        <section class="pt-28 ">
-            <div class="text-center">
-                <h1 class="font-extrabold text-4xl pb-5"> Clients Question</h1>
-                <p class="text-base font-medium" style="color: rgba(19, 19, 24, 0.60); ">What clients ask about us?</p>
+        <section>
+            <div class="my-20 text-center">
+                <h2 class="text-4xl font-extrabold mb-6">Clients Question</h2>
+                <p class="w-9/12 mx-auto font-medium">Ice hockey, referred to in the US simply as "hockey", is a popular
+                    sport in the United States.</p>
             </div>
-            <div>
-                <div class="hero min-h-screen">
-                    <div class="hero-content flex-col lg:flex-row gap-10">
-                        <img src="Images/11.png" class="max-w-sm rounded-lg shadow-2xl w-1/2 lg:w-full" />
-                        <!-- According -->
-                        <div class="pb-20">
-                            <div class="collapse collapse-plus bg-base-200 pb-15">
-                                <input type="radio" name="my-accordion-3" checked="checked" />
-                                <div class="collapse-title text-xl font-medium">
-                                    Who we are?
-                                </div>
-                                <div class="collapse-content">
-                                    <p>We are the first club in the whole country of Hockey.</p>
-                                </div>
-                            </div>
-                            <div class="collapse collapse-plus bg-base-200 pb-15">
-                                <input type="radio" name="my-accordion-3" />
-                                <div class="collapse-title text-xl font-medium">
-                                    Our Equipment
-                                </div>
-                                <div class="collapse-content">
-                                    <p>We provide all kinds of equipments</p>
-                                </div>
-                            </div>
-                            <div class="collapse collapse-plus bg-base-200">
-                                <input type="radio" name="my-accordion-3" />
-                                <div class="collapse-title text-xl font-medium">
-                                    Why we are the best out of best?
-                                </div>
-                                <div class="collapse-content">
-                                    <p>We provide all types of facilities</p>
-                                </div>
-                            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+
+                <img class="lg:flex-1" src="Images/11.png" alt="">
+
+                <div class=" space-y-6 lg:flex-1">
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-bold">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content">
+                            <p>Ice hockey, referred to in the US simply as "hockey", is a popular sport in the United
+                                States.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content">
+                            <p>Ice hockey, referred to in the US simply as "hockey", is a popular sport in the United
+                                States.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content">
+                            <p>Ice hockey, referred to in the US simply as "hockey", is a popular sport in the United
+                                States.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content">
+                            <p>Ice hockey, referred to in the US simply as "hockey", is a popular sport in the United
+                                States.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold">
+                            Booking
+                        </div>
+                        <div class="collapse-content">
+                            <p>Ice hockey, referred to in the US simply as "hockey", is a popular sport in the United
+                                States.</p>
                         </div>
                     </div>
                 </div>
 
             </div>
-
         </section>
         <!--Sec-7 Get In Touch -->
         <section>
-            <div class="text-center">
-                <h1 class="font-extrabold text-4xl pb-5">Get In Touch</h1>
-                <p class="text-base font-medium" style="color: rgba(19, 19, 24, 0.60); ">You can write to us about
-                    anything</p>
+            <div class="my-20 text-center">
+                <h2 class="text-4xl font-extrabold mb-6">Get In Touch</h2>
+                <p class="w-9/12 mx-auto font-medium">Ice hockey, referred to in the US simply as "hockey", is a popular
+                    sport in the United States.</p>
             </div>
-            <div class="flex flex-col lg:flex-row">
-                <div class="pb-15 w-1/2 place-content-center lg:w-full">
-                    <div
-                        style="width: 374px; height: 216px; border-radius: 16px; background: rgba(188, 237, 109, 0.10);">
-                        <div><img src="Images/Group 1171275317.png" alt=""></div>
-                        <div style="color: rgba(19, 19, 24, 0.40); ">Phone Number</div>
-                        <div style="font-weight: bold;">01739622</div>
+
+            <div class=" lg:flex  gap-14">
+                <!-- card section -->
+                <div class="space-y-6 border-2 p-12 rounded-xl flex-1">
+                    <div class=" bg-amber-50 rounded-xl p-9 ">
+                        <img class="mb-6" src="Images/call.png" alt="">
+                        <small>Phone Number :</small>
+                        <h4 class="text-lg font-medium">(+880) 1760-359075</h4>
                     </div>
-                    <div
-                        style="width: 374px; height: 216px; border-radius: 16px; background: rgba(241, 241, 238, 0.1);">
-                        <div><img src="Images/Group 1171275318.png" alt=""></div>
-                        <div style="color: rgba(19, 19, 24, 0.40); ">Email</div>
-                        <div style="font-weight: bold;">Shakil109@gamil.com</div>
+                    <div class=" bg-orange-100 rounded-xl p-9 ">
+                        <img class="mb-6" src="Images/massage.png" alt="">
+                        <small>Email:</small>
+                        <h4 class="text-lg font-medium">rakibuli2806@gmail.com</h4>
                     </div>
-                    <div
-                        style="width: 374px; height: 216px; border-radius: 16px; background: rgba(188, 237, 109, 0.10);">
-                        <div><img src="Images/Group 1171275321.png" alt=""></div>
-                        <div style="color: rgba(19, 19, 24, 0.40); ">Location</div>
-                        <div style="font-weight: bold;">Bangla Motor, Dhaka</div>
+                    <div class=" bg-violet-200 rounded-xl p-9 ">
+                        <img class="mb-6" src="Images/gps.png" alt="">
+                        <small>Location :</small>
+                        <h4 class="text-lg font-medium">52 North Road, Dhanmondi</h4>
                     </div>
+                </div>
+
+
+                <!-- form section  -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 flex-1">
+                    <div class="grid grid-cols-1 space-y-3 ">
+                        <label class="text-lg font-bold" for="">Name</label>
+                        <input class="border-2 rounded-lg h-14 p-5 bg-slate-100" type="text" name="" id="" placeholder="Enter your full name
+              ">
+                    </div>
+                    <div class="grid grid-cols-1 space-y-3">
+                        <label class="text-lg font-bold" for="">Email</label>
+                        <input class="border-2 rounded-lg h-14 p-5 bg-slate-100" type="email" name="" id=""
+                            placeholder="Enter your email">
+                    </div>
+                    <div class="grid grid-cols-1 space-y-3">
+                        <label class="text-lg font-bold" for="">Subject</label>
+                        <input class="border-2 rounded-lg h-14 p-5 bg-slate-100" type="text" name="" id=""
+                            placeholder="Enter your subject">
+                    </div>
+                    <div class="grid grid-cols-1 space-y-3">
+                        <label class="text-lg font-bold" for="">Phone Number</label>
+                        <input class="border-2 rounded-lg h-14 p-5 bg-slate-100" type="tel" name="" id=""
+                            placeholder="Enter your phone number">
+                    </div>
+
+                    <div>
+                        <div class=" mb-8 space-y-3">
+                            <label class="text-lg font-bold" for="">Message</label>
+                            <textarea class="border-2 rounded-lg p-5 bg-slate-100" name="" id="" cols="50" rows="15"
+                                placeholder="Write your message"></textarea>
+                        </div>
+                        <div class=" justify-center text-center">
+                            <a class="btn bg-btn-bg-color">Send Message</a>
+                        </div>
+                    </div>
+
                 </div>
                 <div>
-                    <div class="flex p-10 gap-10">
-                        <div>
-                            <h1>Your Name</h1>
-                            <input type="text" placeholder="your name" class="input input-bordered w-full max-w-xs" />
-                        </div>
-                        <div>
-                            <h1>Your Email</h1>
-                            <input type="text" placeholder="your email" class="input input-bordered w-full max-w-xs" />
-                        </div>
-                    </div>
-                    <div class="flex p-10 gap-10">
-                        <div>
-                            <h1>Subject</h1>
-                            <input type="text" placeholder="your subject"
-                                class="input input-bordered w-full max-w-xs" />
-                        </div>
-                        <div>
-                            <h1>Phone Number</h1>
-                            <input type="text" placeholder="your number" class="input input-bordered w-full max-w-xs" />
-                        </div>
-                    </div>
-                    <div class="pl-10">
-                        <h1>Message</h1>
-                        <textarea class="textarea textarea-bordered" placeholder="Message"></textarea><br>
-                        <button class="bg-red-600 text-white font-bold" style="border-radius: 10px;">Send
-                            Message</button>
-                    </div>
                 </div>
             </div>
-            <!-- SEction-8 -->
-            <section class="w-full lg:w-full">
-                <div class="text-center place-content-center">
-                    <h1 class="font-extrabold text-xl">Socical Media</h1>
-                    <div class="flex gap-4 place-content-center lg:place-content-center pt-3">
-                        <img style="width: 24px; height: 24px;" src="Images/fb.png" alt="">
-                        <img style="width: 24px; height: 24px;" src="Images/X.png" alt="">
-                        <img style="width: 24px; height: 24px;" src="Images/insta.png" alt="">
-                        <img style="width: 24px; height: 24px;" src="Images/github.png" alt="">
-                    </div>
-                </div>
-            </section>
-
         </section>
-    </div>
-
-    <footer class="pt-20  ">
-        <footer
-            class="footer p-10 bg-black text-base-content place-content-center justify-between flex flex-col w-full lg:flex-row w-full">
-            <nav>
-                <header class="footer-title font-extrabold text-3xl text-white">Get In Touch</header>
-                <a class="link link-hover font-medium text-white">We are always for you</a>
-                <div class="flex">
-                    <img style="width: 20px; height: 20px;" src="Images/Group 1171275317.png" alt="">
-                    <a class="link link-hover font-medium text-white">(+62) 123-321-543</a>
+        <!-- SEction-8 -->
+        <section class="my-24">
+            <div class="text-center bg-slate-100 py-8">
+                <h2 class="text-4xl font-extrabold mb-6">Social Media</h2>
+                <div class="flex justify-center gap-8">
+                    <i class="fa-brands fa-twitter text-5xl"></i>
+                    <i class="fa-brands fa-facebook-f text-4xl"></i>
+                    <i class="fa-brands fa-instagram text-4xl"></i>
+                    <i class="fa-brands fa-github text-5xl"></i>
+                    <i class="fa-brands fa-whatsapp text-4xl"></i>
                 </div>
-                <div class="flex">
-                    <img style="width: 20px; height: 20px;" src="Images/Group 1171275318.png" alt="">
-                    <a class="link link-hover font-medium text-white">hockeyz@gmail.com</a>
+            </div>
+        </section>
+        <!-- footer section -->
+        <footer class="footer p-10  bg-neutral  ">
+            <div class="grid grid-cols-1 text-center items-center lg:grid-cols-3 gap-24 text-white">
+                <div class="space-y-5">
+                    <h2 class="text-3xl font-extrabold">Get In Touch</h2>
+                    <p>Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                        nullam
+                        proin. </p>
+                    <div>
+                        <i class="fa-regular fa-envelope"></i>
+                        <small>rakibuli2806@gmail.com</small>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <small>(+880) 1760-359075</small>
+                    </div>
                 </div>
-            </nav>
-
-            <div class="flex gap-10 lg:gap-20">
-                <nav>
-                    <header class="footer-title font-extrabold text-3xl text-white">Company</header>
-                    <a class="link link-hover font-medium text-white">About us</a><br>
-                    <a class="link link-hover font-medium text-white">Contact</a><br>
-                    <a class="link link-hover font-medium text-white">Jobs</a><br>
-                    <a class="link link-hover font-medium text-white">Press kit</a>
-                </nav>
-                <nav>
-                    <header class="footer-title font-extrabold text-3xl text-white">Legal</header>
-                    <a class="link link-hover font-medium text-white">Terms of use</a><br>
-                    <a class="link link-hover font-medium text-white">Privacy policy</a><br>
-                    <a class="link link-hover font-medium text-white">Cookie policy</a>
+                <div class="flex gap-28">
+                    <nav class="grid grid-cols-1 space-y-3">
+                        <header class="footer-title">Company</header>
+                        <a class="link link-hover">About us</a>
+                        <a class="link link-hover">Leadership</a>
+                        <a class="link link-hover">Careers</a>
+                        <a class="link link-hover">News & Article</a>
+                        <a class="link link-hover">Legal Notice</a>
+                    </nav>
+                    <nav class="grid grid-cols-1 space-y-3">
+                        <header class="footer-title">Support</header>
+                        <a class="link link-hover">Help Center</a>
+                        <a class="link link-hover">FAQ</a>
+                        <a class="link link-hover">Ticket Support</a>
+                        <a class="link link-hover">Contact Us</a>
+                    </nav>
+                </div>
+                <nav class="grid grid-cols-1 space-y-3 mx-auto">
+                    <header class="footer-title">Services</header>
+                    <a class="link link-hover">Academy</a>
+                    <a class="link link-hover">Group Lesson</a>
+                    <a class="link link-hover">Private Lesson</a>
+                    <a class="link link-hover">Hockeys for kids</a>
+                    <a class="link link-hover">Hockeys for Adult</a>
                 </nav>
             </div>
-            <nav>
-                <header class="footer-title font-extrabold text-3xl text-white">Support</header>
-                <a class="link link-hover font-medium text-white">Visit our office</a>
-                <a class="link link-hover font-medium text-white">Invest our comany</a>
-                <a class="link link-hover font-medium text-white">Career track now</a>
-            </nav>
         </footer>
-
-    </footer>
 </body>
 
 </html>
